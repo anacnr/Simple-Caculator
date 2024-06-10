@@ -8,7 +8,7 @@ body.appendChild(header)
 
 let h1 = document.createElement('h1')
 h1.id = 'title'
-h1.innerHTML = 'Caculadora simples'
+h1.innerHTML = 'Tabuada simples'
 header.appendChild(h1)
 
 const main = document.createElement('main')
