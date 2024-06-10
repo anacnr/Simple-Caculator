@@ -1,3 +1,5 @@
+/*Eu me inspirei fazer assim por conta de um template React*/
+
 document.addEventListener("DOMContentLoaded", ()=>{
 
 /*Elementos*/
@@ -16,7 +18,7 @@ body.appendChild(main)
 
 let paragraph = document.createElement('p')
 paragraph.id = 'phrase'
-paragraph.innerHTML = 'Adicione dois números e escolha o sinal.'
+paragraph.innerHTML = 'Adicione números e escolha o sinal.'
 main.appendChild(paragraph)
 
 const advice = document.createElement('p')
@@ -35,13 +37,27 @@ first_input.placeholder = 0
 first_input.required = true
 div.appendChild(first_input)
 
+let first_label = document.createElement('label')
+first_label.htmlFor = 'first'
+first_label.id = 'first_label'
+first_label.textContent = 'Primeiro número:'
+first_label.className = 'input-label'
+div.appendChild(first_label)
+
 let operator = document.createElement('input')
 operator.type = 'text'
+operator.id = 'operator'
 operator.className = 'operator'
 operator.placeholder = 'Sinal'
 operator.maxLength = '8'
 operator.required = true
 div.appendChild(operator)
+
+let second_label = document.createElement('label')
+second_label.htmlFor = 'operator'
+second_label.textContent = 'Operador:'
+second_label.className = 'input-label'
+div.appendChild(second_label)
 
 let second_input = document.createElement('input')
 second_input.type = 'number'
@@ -50,6 +66,12 @@ second_input.maxLength = '4'
 second_input.placeholder = 0
 second_input.required = true
 div.appendChild(second_input)
+
+let third_label = document.createElement('label')
+third_label.htmlFor = 'second'
+third_label.textContent = 'Segundo número:'
+third_label.className = 'input-label'
+div.appendChild(third_label)
 
 const button = document.createElement('button')
 button.type = 'button'
