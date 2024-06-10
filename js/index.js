@@ -124,7 +124,4 @@ button.addEventListener("click", ()=>{
         console.log("Operação inválida");
     }
 })
-
-
-
 });//Carregamento
