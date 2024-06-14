@@ -1,0 +1,156 @@
+@charset "UTF-08";
+
+*{
+    margin: 0%; padding: 0px; box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --backgound-color : linear-gradient(195deg, #00aaff,#00ffaa);
+    --font-family: 'Roboto' , sans-serif;
+    --font-color-h1: rgba(248, 242, 242, 0.993);
+    --font-color-phrase: rgb(98, 7, 62);
+}
+
+html, body{
+    width: 100vw; height: 100vh; background-image: var(--backgound-color); font-family: var(--font-family); cursor: context-menu; overflow: hidden;
+}
+
+main > div > input:focus{
+    outline: 0;
+}
+main > div > input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+main > div > input[type=number]{
+    -webkit-appearance: textfield;
+}
+
+@media (min-width:600px) and (max-width:768px) {
+    header > h1{
+        text-align: center; margin-top: 10%; margin-bottom: 10%; color: var(--font-color-h1); letter-spacing: 2px; text-shadow: 1px 2px 4px black; font-size: 1.5em;
+    }
+
+    main{
+        height: 370px;
+    }
+
+    main > #phrase{
+        text-align: center; color: var(--font-color-phrase); background-color: rgba(255, 255, 255, 0.84); border-radius: 3px; padding: 3px; font-size: 1em; width: 300px; display: block; margin: auto; box-shadow: 1px 2px 10px rgb(36, 34, 34);
+    }
+
+    main > #advice{
+        text-align: center; color: var(--font-color-phrase); background-color: rgb(245, 244, 203); border-radius: 3px; padding: 3px; font-size: 1em; width: 300px; display: block; margin: auto; transform: translateY(5vh); box-shadow: 1px 2px 10px rgb(36, 34, 34);        
+    }
+
+    main > div{
+        background-color: #00ffaa; display: block; margin: auto; width: 360px; height: 250px; transform: translateY(15vh); border-radius: 6px; box-shadow: 2px 2px 10px rgb(93, 3, 101);
+    }
+
+    /*Personalização do input e label do primeiro número*/
+    main > div > #first_label{
+        position: absolute; left: 75%; top: 27%; font-size: 1em; color: white; text-shadow: 1px 1px 3px black; letter-spacing: 1px; cursor: pointer;
+    }
+    main > div > #first{
+        position: absolute; left: 50%; top: 25%; width: 75px; border-top: none; border-right: none; border-left: none; background-color: transparent; text-align: right; text-indent: 2px; 
+    }
+
+    /*Personalização do input e label do operador*/
+    main > div > #second_label{
+        position: absolute; left: 6%; top: 39%; color: white; font-size: 1em; text-shadow: 1px 1px 3px black; letter-spacing: 1px; cursor: pointer; 
+    }
+    main > div > #operator{
+        position: absolute; left: 33%; top: 39%; width: 20px; background-color: transparent; border: 0px; border-radius: 3px; box-shadow: 1px 1px 4px black; text-align: center; font-weight: 600; font-size: 1em; color: white; text-shadow: 1px 1px 2px black;
+    }
+    main > div > #operator::placeholder{
+        color:white; text-shadow: 1px 1px 2px black; opacity: 0.9;    
+    }
+
+    /*Personalização do input e label do segundo número*/
+    main > div > #third_label{
+        position: absolute; left: 75%; top: 47%; font-size: 1em; color: white; text-shadow: 1px 1px 3px black; letter-spacing: 1px; cursor: pointer;
+    }
+    main > div > #second{
+        position: absolute; left: 50%; top: 45%; width: 75px; border-top: none; border-right: none; border-left: none; background-color: transparent; text-align: right; text-indent: 2px; 
+    }
+
+    /*Linha do resultado*/
+    main > div > #paragraph_count{
+        position: absolute; left: 56%; top: 63%; font-size: 0.8em; font-weight: 100; color: white; text-shadow: 1px 1px 2px black;
+    }
+    main > div > hr{
+        position: absolute; left: 50%; top: 70%; width: 75px; border: 1px solid rgba(72, 51, 51, 0.541);
+    }
+
+    main > div > button{
+        display: block; margin: auto; transform: translateY(28vh); font-family: var(--font-family); font-weight: 600; color: var(--font-color-phrase); padding: 4px; cursor: pointer; border: 0px; border-radius: 3px; box-shadow: 2px 2px 10px black;
+    }
+    main > div > button:hover{
+        background-color: rgba(248, 248, 49, 0.927);
+    }
+}
+
+@media (min-width:768px){
+    header > h1{
+        text-align: center; margin-top: 80px; margin-bottom: 80px; color: var(--font-color-h1); letter-spacing: 2px; text-shadow: 1px 2px 4px black; font-size: 1.5em;
+    }
+
+    main{
+        height: 370px;
+    }
+
+    main > #phrase{
+        text-align: center; color: var(--font-color-phrase); background-color: rgba(255, 255, 255, 0.84); border-radius: 3px; padding: 3px; font-size: 1em; width: 300px; display: block; margin: auto; box-shadow: 1px 2px 10px rgb(36, 34, 34);
+    }
+
+    main > #advice{
+        text-align: center; color: var(--font-color-phrase); background-color: rgb(245, 244, 203); border-radius: 3px; padding: 3px; font-size: 1em; width: 300px; display: block; margin: auto; transform: translateY(5vh); box-shadow: 1px 2px 10px rgb(36, 34, 34);        
+    }
+
+    main > div{
+        background-color: #00ffaa; display: block; margin: auto; width: 360px; height: 250px; transform: translateY(15vh); border-radius: 6px; box-shadow: 2px 2px 10px rgb(93, 3, 101);
+    }
+
+    /*Personalização do input e label do primeiro número*/
+    main > div > #first_label{
+        position: absolute; left: 75%; top: 27%; font-size: 1em; color: white; text-shadow: 1px 1px 3px black; letter-spacing: 1px; cursor: pointer;
+    }
+    main > div > #first{
+        position: absolute; left: 50%; top: 25%; width: 75px; border-top: none; border-right: none; border-left: none; background-color: transparent; text-align: right; text-indent: 2px; 
+    }
+
+    /*Personalização do input e label do operador*/
+    main > div > #second_label{
+        position: absolute; left: 6%; top: 39%; color: white; font-size: 1em; text-shadow: 1px 1px 3px black; letter-spacing: 1px; cursor: pointer; 
+    }
+    main > div > #operator{
+        position: absolute; left: 33%; top: 39%; width: 20px; background-color: transparent; border: 0px; border-radius: 3px; box-shadow: 1px 1px 4px black; text-align: center; font-weight: 600; font-size: 1em; color: white; text-shadow: 1px 1px 2px black;
+    }
+    main > div > #operator::placeholder{
+        color:white; text-shadow: 1px 1px 2px black; opacity: 0.9;    
+    }
+
+    /*Personalização do input e label do segundo número*/
+    main > div > #third_label{
+        position: absolute; left: 75%; top: 47%; font-size: 1em; color: white; text-shadow: 1px 1px 3px black; letter-spacing: 1px; cursor: pointer;
+    }
+    main > div > #second{
+        position: absolute; left: 50%; top: 45%; width: 75px; border-top: none; border-right: none; border-left: none; background-color: transparent; text-align: right; text-indent: 2px; 
+    }
+
+    /*Linha do resultado*/
+    main > div > #paragraph_count{
+        position: absolute; left: 56%; top: 63%; font-size: 0.8em; font-weight: 100; color: white; text-shadow: 1px 1px 2px black;
+    }
+    main > div > hr{
+        position: absolute; left: 50%; top: 70%; width: 75px; border: 1px solid rgba(72, 51, 51, 0.541);
+    }
+
+    main > div > button{
+        display: block; margin: auto; transform: translateY(28vh); font-family: var(--font-family); font-weight: 600; color: var(--font-color-phrase); padding: 4px; cursor: pointer; border: 0px; border-radius: 3px; box-shadow: 2px 2px 10px black;
+    }
+    main > div > button:hover{
+        background-color: rgba(248, 248, 49, 0.927);
+    }
+}
