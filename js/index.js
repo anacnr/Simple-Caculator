@@ -145,10 +145,8 @@ const split = ()=>{
 button.addEventListener("click", ()=>{
     if(operator.value == '+' || operator.value == 'mais'){
         sum()
-
-            //button.innerHTML = 'De novo'
-            
-            button.addEventListener("click", ()=>{
+            //button.innerHTML = 'De novo'          
+            //button.addEventListener("click", ()=>{
                
                 setTimeout(()=>{
                     //Limpa os values
@@ -158,35 +156,61 @@ button.addEventListener("click", ()=>{
                     let paragraph_count = document.querySelector("#paragraph_count")
                     
                     paragraph_count.textContent = ''
-    
                 },1500)
-            })
+            //})
     }
     else if(operator.value == '-' || operator.value == 'menos'){
         minus()
-        //Limpa os values
-        operator.value = ''
-        document.querySelectorAll('input')[0].value = ''
-        document.querySelectorAll('input')[2].value = ''
+            //button.innerHTML = 'De novo'          
+            //button.addEventListener("click", ()=>{
+               
+                setTimeout(()=>{
+                    //Limpa os values
+                    operator.value = ''
+                    document.querySelectorAll('input')[0].value = ''
+                    document.querySelectorAll('input')[2].value = ''
+                    let paragraph_count = document.querySelector("#paragraph_count")
+                    
+                    paragraph_count.textContent = ''
+                },1500)
+            //})
     }
     else if(operator.value == '*' || operator.value == 'x' || operator.value == 'multiplicação'){
         multiple()
-        //Limpa os values
-        operator.value = ''
-        document.querySelectorAll('input')[0].value = ''
-        document.querySelectorAll('input')[2].value = ''
+            //button.innerHTML = 'De novo'          
+            //button.addEventListener("click", ()=>{
+               
+                setTimeout(()=>{
+                    //Limpa os values
+                    operator.value = ''
+                    document.querySelectorAll('input')[0].value = ''
+                    document.querySelectorAll('input')[2].value = ''
+                    let paragraph_count = document.querySelector("#paragraph_count")
+                    
+                    paragraph_count.textContent = ''
+                },1500)
+            //})
     }
     else if(operator.value == '/' || operator.value == 'divisão'){
         split()
-        //Limpa os values
-        operator.value = ''
-        document.querySelectorAll('input')[0].value = ''
-        document.querySelectorAll('input')[2].value = ''
+            //button.innerHTML = 'De novo'          
+            //button.addEventListener("click", ()=>{
+               
+                setTimeout(()=>{
+                    //Limpa os values
+                    operator.value = ''
+                    document.querySelectorAll('input')[0].value = ''
+                    document.querySelectorAll('input')[2].value = ''
+                    let paragraph_count = document.querySelector("#paragraph_count")
+                    
+                    paragraph_count.textContent = ''
+                },1500)
+            //})
     }
     else{
-        let paragraph_count = document.createElement('p')
-        paragraph_count.innerHTML = 'Operação inválida'
-        div.appendChild(paragraph_count)
+        setTimeout(()=>{
+            alert('Operação inválida')
+        },1500)
     }
 });//Evento do botão
 });//Carregamento
